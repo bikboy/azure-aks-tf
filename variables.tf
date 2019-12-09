@@ -41,3 +41,15 @@ variable "sp_least_privilidge" {
   default     = false
   description = "[Alpha] This feature creates a limited role for use by the K8s Service principal which limits access to only those resources needed for k8s operation"
 }
+variable "docker_login" {
+  type = "string"
+  description = "login to docker hub registry"
+}
+variable "docker_password" {
+  type = "string"
+  description = "password to docker hub registry"
+}
+variable "docker_email" {
+  type = "string"
+  description = "email to docker hub registry"
+}
